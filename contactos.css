@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(64, 0, 255);
+    margin: 10%;
+}
+div{
+    background-color: aliceblue;
+    margin: auto;
+    width: 500px;
+}
+img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-color: aquamarine;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    margin: auto; 
+}
+p{
+    display: flex;
+    padding-right: 1px;
+    margin: auto;
+    
+
+}
