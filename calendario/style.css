@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.grid-container {
+    border: 2px solid grey;
+    display: grid;
+grid-template-columns:repeat(4, 300px); /* 300px 300px 300px 300px*/
+grid-template-rows: 100px 100px 100px 100px ;
+column-gap: px;
+row-gap: px;
+}
+
+div {
+    padding: 20px 0;
+    background-color: #E91E62;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#january{
+        grid-column-start: 1;
+        grid-column-end: 3;
+} 
+#december{
+    grid-column-start: 1;
+        grid-column-end: 5;
+}
+
+ #february{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+#may{
+        grid-column-start:3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+#june{
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end:4;
+    }
+    #october{
+        grid-column-start: 2;
+        grid-column-end: 4; 
+    }
+    #september{
+        grid-column-start: 1;
+        grid-column-end: 1; 
+    }
