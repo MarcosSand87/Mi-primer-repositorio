@@ -1,0 +1,101 @@
+
+ article{
+    border: 1px solid;
+ }
+h1 {
+    text-align: center;
+    font-size: 16px; 
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+}
+p{
+    align-items:center;
+}
+#box1{
+    background-color: blue;
+    text-align: center;
+
+}
+#box2{
+    background-color: rgba(0, 0, 255, 0.64);
+    text-align: center;
+}
+#box3{
+    background-color: rgba(0, 123, 255, 0.302);
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    #box1, #box2, #box3 {
+         width:100%; 
+        height:100%;
+        margin: 0px; 
+    }
+     #prueba1, #prueba2{
+        display:none;
+    }
+}
+@media only screen and (min-width: 600px){
+   #box1, #box2, #box3 {
+        width:100%; 
+        height:100%;
+        margin: 0px; 
+    } 
+    /* #prueba3, #prueba1{
+        display:none;
+    } */
+       h1 {
+           text-align: center;
+           font-size: 16px; 
+       }
+       div{
+           margin-top: 250px;
+       }
+       #box1{
+           background-color: red;
+           text-align: center;
+       }
+       #box2{
+           background-color:rgba(255, 0, 0, 0.686);
+           text-align: center;
+       }
+       #box3{
+           background-color:rgba(255, 0, 0, 0.258);
+           text-align: center;
+       }
+       
+}
+@media only screen and (min-width: 900px){
+    #box1, #box2, #box3 {
+        width:100%; 
+        height:100%;
+        margin: 0px; 
+    } 
+     #prueba2, #prueba3{
+        display:none;
+    } 
+    h1 {
+        text-align: center;
+        font-size: 16px; 
+    }
+    div{
+        margin-top: 500px;
+    }
+    #box1{
+        background-color: green;
+        text-align: center;
+    }
+    #box2{
+        background-color:rgba(0, 128, 0, 0.695);
+        text-align: center;
+    }
+    #box3{
+        background-color:rgba(0, 128, 0, 0.376);
+        text-align: center;
+    }
+}
+
+

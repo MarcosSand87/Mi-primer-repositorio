@@ -1,0 +1,58 @@
+ .card{
+    display: grid;
+    place-items: center;
+    height: 600px;
+    background-color: rgba(128, 128, 128, 0.304);
+} 
+
+.tarjeta {
+    width: 250px;
+    height: 450px;
+    background-image:url(descarga.jfif);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10%;
+    border: 1px solid;
+    background-color: rgba(0, 255, 255, 0.181);
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px blue;
+}
+
+h2{
+    color:black;
+    font-size: 40px;
+    margin: 0;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.tarjeta:hover h2{
+    color:grey; 
+}
+
+p{
+    color: #f0f0f0;
+    font-size: 16px;
+    margin: 5px 0 15px;
+    text-align: center;
+}
+
+.boton {
+    padding: 10px 20px;
+    background: white;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.boton:hover {
+    transform: translateY(-10px);
+    background-color:grey;
+}
