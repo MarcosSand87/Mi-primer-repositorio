@@ -1,6 +1,7 @@
 
  article{
-    border: 1px solid;
+    display: flex;
+    flex-direction: column;
  }
 h1 {
     text-align: center;
@@ -44,14 +45,16 @@ p{
         height:100%;
         margin: 0px; 
     } 
-    /* #prueba3, #prueba1{
+ #prueba3, #prueba1{
         display:none;
-    } */
+    } 
        h1 {
            text-align: center;
            font-size: 16px; 
        }
        div{
+        display: flex;
+        flex-direction: column-reverse;
            margin-top: 250px;
        }
        #box1{
@@ -74,14 +77,20 @@ p{
         height:100%;
         margin: 0px; 
     } 
-     #prueba2, #prueba3{
-        display:none;
+ 
+     #prueba1{
+    display: block;
+
     } 
+    #prueba2{
+        display: none;
+    }
     h1 {
-        text-align: center;
         font-size: 16px; 
     }
     div{
+        display: flex;
+        flex-direction: column;
         margin-top: 500px;
     }
     #box1{
