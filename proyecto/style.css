@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+html{
+    font-family: "tektur", sans-serif;
+}
+*{
+    margin: 0;
+}
+body{
+    border: 5px solid ;
+    background-color: rgba(0, 255, 255, 0.351);
+}
+.header{
+    background-color: aliceblue;
+    position: fixed;/*posicion barra de nav*/
+    height:20%;/*altura de la etiqueta header*/
+    width: 100%;/* ancho de la pagina */
+    background-color: #f8cb04;
+    margin-top: -5px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+.logo{
+width: 17%;
+}
+h1{
+    font-size: 80px;
+    margin: 20px;
+}
+ul{
+    display:flex;/* lista ordenada*/
+    margin: 50px 0px;
+    list-style: none;/*quitamos los puntos de la lsita desordenada*/
+}
+a{
+    text-decoration: none;/* elimena el subrayado de las palabras del navegador*/
+margin: 6px 10px;
+}
+li{
+font-size: 25px;/*tamaño de las letras*/
+margin: 10px 20px;/* margen entre ellos arriba y abajo y izquierda derecha*/
+text-transform: uppercase;/* todas las palabras en mayusculas*/
+}
+li:hover{
+    border-radius: 10px;
+    background-color:rgb(149, 108, 64);
+    
+}
+.imagenP{
+align-items: center;/*para que quede ecentrado el texto*/
+background-size: cover;/*escala la imagen al contenido*/
+padding:15%;
+ margin-top: 136px; /*margen de arriba  */
+background-image: url(../proyecto/gafas_interactivas.webp);
+background-repeat: no-repeat;/* no repetir la imagen*/
+}
+.I{
+    margin-left: -200px;
+    font-size: 35px;
+    color: #ff8b00;
+font-weight:bolder;/* grosor de la fuente*/
+}
+.feria{
+    padding: 100px 10px 100px 40px;
+
+}
+.imagenA{
+margin: 50px 100px 50px 20px;
+    border-radius: 10%;
+} 
+.descripcion{
+display: flex;
+justify-content: center;
+}
+.tekab{
+    font-size: 20px;
+    font-weight: bold;/* texto en negrita*/
+    line-height: 50px;/* separa las lineas de texto*/
+} 
+.servicios{
+    display: flex;
+}
+.publico{
+    padding: 80px 0px 80px 40px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+.ifeza{
+    padding: 5px 0px 80px 5px;
+    font-size: 40px;
+    
+}
+.ubicacion{
+display: flex
+}
+.mapa{
+    font-size: 20px;
+}
+.imgmapa{
+width:80%;
+border-radius: 30%;
+margin-left:120px ;
+}
+.ave{
+    text-align: center;
+    line-height: 45px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.footer{
+    display: flex;
+    
+}
+.info{
+    font-size: 16px;
+}
