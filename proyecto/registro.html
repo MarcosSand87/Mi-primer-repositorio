@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conferencia Internacional 2025</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    form{
+    margin-top: 140px;
+    width: 90%;
+    /* padding: 10px 20px 10px 20px; */
+    color: #7b670e;
+    text-align: center;
+    font-size: 20px;
+  
+    }
+</style>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <nav class="nav">
             <a class="logo" href="logo"><img src="../proyecto/conferencia.png" alt="Logo conferencia"
                     style="left: auto;"></a>
@@ -18,83 +30,95 @@
                 <li><a href="contenido.html">contenido</a></li>
             </ul>
         </nav>
-    </header> -->
+    </header>
 
     <form>
         <fieldset>
-        <p>DATOS PERSONALES</p>
-         <input id="name" type="text" name="nombre" placeholder="Ingresa el nombre"><!--input tipo texto nombre y apellidos-->
-         <input id="apellidos" type="text" name="apellidos" placeholder="Ingresa los apellidos">
-         <input id="email" type="email" name="email" placeholder="Ingrese al Email">
-         <input id="pass" type="password" id="password" name="password" pattern=".{6,}" required>"Por favor, introduce una contraseña con al menos 6 caracteres"<!--minimo 6 xcareacteres-->
-        <input type="date" name="" id=""><!--fecha de nacimento-->
-    </fieldset>
-    <fieldset>
-    <P>INFORMACION DE CONTACTO</P>
-    <input type="tel">
-    <input type="text">
-</fieldset>
-<fieldset>
-    <p>Preferencias del envento</p>
-    <label for="">Pais</label>
-    <select name="" id="Paises"></select>
-    <option value="esp">España</option>
-    <option value="fra">Francia</option>
-    <option value="port">Portugal</option>
-    <option value="alem">Alemania</option>
-    <option value="ita">Italia</option>
-    <option value="ingl">Inglaterra</option>
-    <input type="checkbox">Diseño web.
-    <input type="checkbox">Inteligenca Artificial.
-    <input type="checkbox">Desarollo web.
-    <input type="checkbox">Ciberseguridad.
-</fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <label><strong>Nombre:</strong></label>
+            <input id="name" type="text" required minlength="3" name="nombre"
+                placeholder="Ingresa el nombre"><!--input tipo texto nombre y apellidos-->
+            <label><strong>Apellidos:</strong></label>
+            <input id="apellidos" type="text" required minlength="3" name="apellidos"
+                placeholder="Ingresa los apellidos">
+            <br><br><label><strong>Email:</strong></label>
+            <input id="email" type="email" required name="email" placeholder="Ingrese al Email">
+            <label><strong>Contraseña:</strong></label>
+            <input id="pass" type="password" required minlength="6" id="password" name="password"
+                placeholder="minimo 6 caracteres"><!--minimo 6 careacteres-->
+            <label><strong>Fecha de naciomiento:</strong></label>
+            <input type="date" required name="" id=""><!--fecha de nacimento-->
+        </fieldset><br>
 
-    <fieldset> 
-        <p>tu sesión:</p>
-        <input type="radio" id="matutina" name="sesion" value="matutina">
-        <label for="matutina">Matutina</label><br>
-        <input type="radio" id="vespertina" name="sesion" value="vespertina">
-        <label for="vespertina">Vespertina</label>
-    </fieldset>
-    <legend>
-    <p>SUBIR ARCHIVO:</p>
-    <input type="file">
-</legend>
-<legend>
-    <p>Comentarios adicionales:</p>
-    <textarea name="mensaje" id="mensaje" placeholder="mensaje"></textarea>
-</legend>
-<legend>
-    <p>INFORMACION DE PAGO:</p>
-    <label for="creditCard">Número de Tarjeta de Crédito:</label>
-<input type="text" id="creditCard" name="creditCard" 
-       pattern="[0-9]{16}" 
-       title="Por favor, introduce un número de tarjeta de crédito válido de 16 dígitos" 
-       required>
-       <input type="month">
-    </legend>
-<fieldset>
-    <button type="submit" value="enviar">Enviar Formulario</button>
-    <button type="reset" value="reiniciar">Reiniciar Formulario</button>
-</fieldset>
-</form>
+        <fieldset>
+            <legend>INFORMACION DE CONTACTO</legend>
+            <label><strong>Telefono:</strong></label>
+            <input type="tel" required minlength="9" name="tel" placeholder="Ingresa tu telefono">
+            <br><br><label><strong>Direción:</strong></label>
+            <input type="text" required name="direccion" placeholder="Ingresa tu direción">
+        </fieldset><br>
 
+        <fieldset>
+            <legend>PREFERENCIAS DEL EVENTO</legend>
+            <label><strong>Pais:</strong></label>
+            <input list="pais" required title="Ingresa el pais">
+            <datalist id="pais">
+                <option>España</option>
+                <option>Francia</option>
+                <option>Portugal</option>
+                <option>Alemania</option>
+                <option>Italia</option>
+                <option>Inglaterra</option>
+            </datalist>
+            <br><br><label><strong>Talleres:</strong></label>
+            <input type="checkbox">Diseño web.
+            <input type="checkbox">Inteligenca Artificial.
+            <input type="checkbox">Desarollo web.
+            <input type="checkbox">Ciberseguridad.
+            <br><br><label><strong>Sesión:</strong></label><br>
+            <input type="radio" required id="matutina" name="sesion" value="matutina">
+            <label for="matutina">Matutina</label><br>
+            <input type="radio" required id="vespertina" name="sesion" value="vespertina">
+            <label for="vespertina">Vespertina</label>
+        </fieldset><br>
 
+        <fieldset>
+            <legend>SUBIR ARCHIVO:</legend>
+            <label><strong>Eniviar CV:</strong></label>
+            <input type="file">
+        </fieldset><br>
 
+        <fieldset>
+            <legend>Comentarios adicionales:</legend>
+            <textarea maxlength="200" name="mensaje" title="Ingresa un comentario"
+                placeholder="Escribe un comentario"></textarea>
+        </fieldset><br>
 
+        <fieldset>
+            <legend>INFORMACION DE PAGO:</legend>
+            <label for="creditCard"><strong>Número de Tarjeta de Crédito:</strong></label>
+            <input type="text" required minlength="16" maxlength="16" id="creditCard" name="creditCard"
+                pattern="[0-9]{16}" title="minimo 16 dígitos" required>
+            <input type="month" required name="mes" title="Fecha de expiración">
+        </fieldset>
 
-<footer>
-    <div class="footer">
-        <p><a href="2025 conferencia">© 2025 Conferencia Internacional</a></p>
-        <p>Derechos de autor reservados:</p>
-        <p>Marcos Sandín Fernandez</p>
-        <ul>
-            <li class="info">Email<a href="info@conferencia.com">info@conferencia.com</a></li>
-            <li class="info">Telefono:<a href="tel:+123456789">123 456 789</a></li>
-        </ul>
-    </div>
-    </div>
-</footer>
+        <fieldset><br><br>
+            <button type="submit" required value="enviar"><strong>ENVIAR</strong></button>
+            <button type="reset" value="reiniciar"><STRong>REINICIAR</STRong></button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <div class="footer">
+            <p><a href="2025 conferencia">© 2025 Conferencia Internacional</a></p>
+            <p>Derechos de autor reservados:</p>
+            <p>Marcos Sandín Fernandez</p>
+            <ul>
+                <li class="info">Email<a href="info@conferencia.com">info@conferencia.com</a></li>
+                <li class="info">Telefono:<a href="tel:+123456789">123 456 789</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
